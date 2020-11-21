@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+ 
+<servlet>
+ <servlet-name>ravi2</servlet-name>
+    <servlet-class>test.LoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ravi2</servlet-name>
+    <url-pattern>/kamal</url-pattern>
+</servlet-mapping>
+  
+ 
+ <servlet>
+ <servlet-name>kamal3</servlet-name>
+    <servlet-class>test.DisplayServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>kamal3</servlet-name>
+    <url-pattern>/gaurav2</url-pattern>
+  </servlet-mapping>
+   
+ <servlet>
+ <servlet-name>kamal4</servlet-name>
+    <servlet-class>test.AddData</servlet-class>
+   
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>kamal4</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+<welcome-file-list>
+<welcome-file>login.html</welcome-file>
+</welcome-file-list>
+
+
+</web-app>

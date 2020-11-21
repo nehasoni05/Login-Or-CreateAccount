@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <link rel="stylesheet" href="/Login/style1.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("form").submit(function(){
+	    alert("Thanks for creating an account!!");
+	  });
+	});
+</script>
+</head>
+<body>
+  <div>
+    <h1 class="heading">Create Account</h1>
+
+        <form action="add" method="post">
+        <p>Enter name: <br><input placeholder="Enter your name" type="text" name="name" required></p>
+        <p>Enter username: <br><input placeholder="Username" type="text" name="username" required></p>
+        <p>Create password: <br><input placeholder="Password" type="password" name="password" required></p>
+        <p>Age: <br><input placeholder="Enter your age" type="number" name="age" required></p>
+        <p>Enter salary: <br><input placeholder="Enter your salary" type="number" name="salary" required></p>
+        <p>Gender: <br>
+        <input class="r1" type="radio" name="recommend" value="Male">Male
+           
+            <input class="r1" type="radio" name="recommend" value="Female">Female
+            <br>
+        </p>
+        <input class="sub" type="submit" value="Create" name="click"> 
+    </form>
+    </div>
+</body>
+</html>
